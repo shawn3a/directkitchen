@@ -1,0 +1,50 @@
+html {
+    padding: 4% 0;
+    background: url("/modules/core/img/brand/bg.png") repeat;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    font-family: News Cycle, sans-serif;
+    background: url("/modules/core/img/brand/bg1.png") repeat;
+}
+
+.logo {
+    display: block;
+}
+
+header {
+    .navbar-header {
+        a {
+            display: block;
+            .logo {
+                height: 70px;
+            }
+        }
+    }
+
+    nav {
+        ul.nav {
+            li {
+                a {
+                    display: block;
+                    height: 50px;
+                    padding: 10px 30px;
+                    box-sizing: content-box;
+                    line-height: 50px;
+                    font-size: 18px;
+                    color: #555555;
+                    text-transform: uppercase;
+                    transition: 1s;
+
+                    &:hover {
+                        background: #6B625E;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+

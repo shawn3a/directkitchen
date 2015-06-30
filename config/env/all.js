@@ -14,7 +14,9 @@ module.exports = {
 		lib: {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
-				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+			//	'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+				'public/modules/core/css/customise.css',
+				'http://fonts.googleapis.com/css?family=News+Cycle'
 			],
 			js: [
 				'public/lib/angular/angular.js',
