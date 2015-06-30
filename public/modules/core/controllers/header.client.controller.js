@@ -15,8 +15,6 @@ angular.module('core').controller('HeaderController', ['$scope', 'Authentication
 			$scope.isCollapsed = false;
 		});
 
-        $scope.menu = getMenu();
-
         function getMenu () {
             var menuName = 'main-menu',
                 menuData = [
@@ -43,8 +41,8 @@ angular.module('core').controller('HeaderController', ['$scope', 'Authentication
                 });
 
             return menu;
-        };
+        }
 
-
+        $scope.menu = getMenu();
 	}
 ]);

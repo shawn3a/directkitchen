@@ -16,6 +16,12 @@ body {
 
 header {
     .navbar-header {
+        .navbar-toggle {
+            background-color: #555555;
+            .icon-bar {
+                background-color: #ffffff;
+            }
+        }
         a {
             display: block;
             .logo {

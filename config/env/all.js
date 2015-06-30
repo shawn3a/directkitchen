@@ -19,6 +19,7 @@ module.exports = {
 				'http://fonts.googleapis.com/css?family=News+Cycle'
 			],
 			js: [
+				'public/lib/jquery/dist/jquery.min.js',
 				'public/lib/angular/angular.js',
 				'public/lib/angular-resource/angular-resource.js', 
 				'public/lib/angular-cookies/angular-cookies.js', 

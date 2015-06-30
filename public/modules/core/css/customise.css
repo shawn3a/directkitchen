@@ -11,6 +11,10 @@ body {
 .logo {
   display: block; }
 
+header .navbar-header .navbar-toggle {
+  background-color: #555555; }
+  header .navbar-header .navbar-toggle .icon-bar {
+    background-color: #ffffff; }
 header .navbar-header a {
   display: block; }
   header .navbar-header a .logo {
