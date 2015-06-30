@@ -22,7 +22,7 @@ angular.module('core').controller('HeaderController', ['$scope', 'Authentication
                 menuData = [
                     {
                         'title': 'HOME',
-                        'url': '/'
+                        'url': ''
                     },
                     {
                         'title': 'ABOUT',
