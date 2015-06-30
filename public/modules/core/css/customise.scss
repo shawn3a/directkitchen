@@ -54,3 +54,23 @@ header {
     }
 }
 
+.slider {
+    width: 60%;
+    margin: auto;
+}
+
+.products {
+    .product {
+        .title {
+            color: #ffffff;
+            background-color: #CEDB32;
+            font-size: 32px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 0 #AFB932;
+            padding: 4%;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+

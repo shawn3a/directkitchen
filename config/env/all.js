@@ -15,7 +15,8 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 			//	'public/lib/bootstrap/dist/css/bootstrap-theme.css',
-				'public/modules/core/css/customise.css',
+			//	'public/modules/core/css/customise.css',
+				'public/lib/flexslider/flexslider.css',
 				'http://fonts.googleapis.com/css?family=News+Cycle'
 			],
 			js: [
@@ -28,7 +29,9 @@ module.exports = {
 				'public/lib/angular-sanitize/angular-sanitize.js', 
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/flexslider/jquery.flexslider-min.js',
+                'public/lib/angular-flexslider/angular-flexslider.js'
 			]
 		},
 		css: [

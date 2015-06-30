@@ -1,5 +1,25 @@
 <section data-ng-controller="HomeController">
     <div class="slider" >
-        Here is the slide
+        <flex-slider flex-slide="slide in slides">
+            <li>
+                <img ng-src="{{slide}}">
+            </li>
+        </flex-slider>
+    </div>
+
+    <div class="products">
+        <div class="container col-sm-4 text-center" data-ng-repeat="product in products">
+            <div class="product">
+                <h3 class="title" data-ng-bind="product.title">
+
+                </h3>
+                <div class="images">
+                    <img data-ng-src="product.images">
+                </div>
+                <div class="description" data-ng-bind="product.description">
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>
