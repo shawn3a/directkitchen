@@ -54,11 +54,6 @@ header {
     }
 }
 
-.slider {
-    width: 60%;
-    margin: auto;
-}
-
 .products {
     .product {
         background-color: #736761;
@@ -131,6 +126,10 @@ article {
 
 input, textarea {
     border-radius: 0 !important;
+}
+
+textarea {
+    resize: none;
 }
 
 .form-group.required:before {
