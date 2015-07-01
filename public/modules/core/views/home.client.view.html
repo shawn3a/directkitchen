@@ -1,4 +1,4 @@
-<section data-ng-controller="HomeController">
+<section data-ng-controller="PageController" class="col-sm-12">
     <div class="slider" >
         <flex-slider flex-slide="slide in slides">
             <li>
@@ -10,14 +10,12 @@
     <div class="products">
         <div class="container col-sm-4 text-center" data-ng-repeat="product in products">
             <div class="product">
-                <h3 class="title" data-ng-bind="product.title">
-
-                </h3>
+                <h3 class="title" data-ng-bind="product.title"></h3>
                 <div class="images">
-                    <img data-ng-src="product.images">
+                    <img data-ng-src="{{product.images}}" title="{{product.images}}" alt="{{product.images}}" >
                 </div>
-                <div class="description" data-ng-bind="product.description">
-
+                <div class="description">
+                    <p data-ng-bind="product.description"></p>
                 </div>
             </div>
         </div>

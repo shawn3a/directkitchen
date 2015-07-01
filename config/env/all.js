@@ -31,7 +31,8 @@ module.exports = {
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 				'public/lib/flexslider/jquery.flexslider-min.js',
-                'public/lib/angular-flexslider/angular-flexslider.js'
+                'public/lib/angular-flexslider/angular-flexslider.js',
+				'public/lib/bootstrap-validator/dist/validator.min.js'
 			]
 		},
 		css: [
