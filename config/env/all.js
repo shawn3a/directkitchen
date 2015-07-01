@@ -6,7 +6,7 @@ module.exports = {
 		description: 'Direct, Kitchen, Ltd',
 		keywords: 'Kitchen, Sink'
 	},
-	port: process.env.PORT || 3000,
+	port: process.env.PORT || 3001,
 	templateEngine: 'swig',
 	sessionSecret: 'MEAN',
 	sessionCollection: 'sessions',
