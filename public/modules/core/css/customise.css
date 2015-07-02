@@ -35,6 +35,8 @@ header nav {
       background: #6B625E;
       color: #ffffff; }
 
+.products a {
+  text-decoration: none; }
 .products .product {
   background-color: #736761;
   height: 450px; }
@@ -99,6 +101,15 @@ footer {
 section.container-fluid {
   margin: 0;
   padding: 0; }
+
+.fancybox {
+  margin: 5px;
+  display: block; }
+  .fancybox img {
+    display: block;
+    width: 80px;
+    float: left;
+    margin: 3px; }
 
 .view-container {
   position: relative; }

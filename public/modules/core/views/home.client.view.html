@@ -8,16 +8,16 @@
     </div>
 
     <div class="products">
-        <div class="container col-sm-4 text-center top-buffer" data-ng-repeat="product in products">
+        <a data-ng-href="/#!/{{product.link}}" class="container col-sm-4 text-center top-buffer" data-ng-repeat="product in products">
             <div class="product">
                 <h3 class="title" data-ng-bind="product.title"></h3>
                 <div class="images">
-                    <img data-ng-src="{{product.images}}" title="{{product.images}}" alt="{{product.images}}" >
+                    <img data-ng-src="{{product.images[0]}}" >
                 </div>
                 <div class="description">
-                    <p data-ng-bind="product.description"></p>
+                    <p data-ng-bind="product.summary"></p>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
 </section>

@@ -23,6 +23,14 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		state('contact', {
 			url: '/contact',
 			templateUrl: 'modules/core/views/contact.client.view.html'
+		}).
+		state('kitchens', {
+			url: '/kitchens',
+			templateUrl: 'modules/core/views/kitchens.client.view.html'
+		}).
+		state('bench', {
+			url: '/bench',
+			templateUrl: 'modules/core/views/bench.client.view.html'
 		});
 	}
 ]);

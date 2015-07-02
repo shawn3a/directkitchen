@@ -17,7 +17,8 @@ module.exports = {
 			//	'public/lib/bootstrap/dist/css/bootstrap-theme.css',
 			//	'public/modules/core/css/customise.css',
 				'public/lib/flexslider/flexslider.css',
-				'http://fonts.googleapis.com/css?family=News+Cycle'
+				'http://fonts.googleapis.com/css?family=News+Cycle',
+				'public/lib/fancybox/source/jquery.fancybox.css'
 			],
 			js: [
 				'public/lib/jquery/dist/jquery.min.js',
@@ -32,7 +33,8 @@ module.exports = {
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 				'public/lib/flexslider/jquery.flexslider-min.js',
                 'public/lib/angular-flexslider/angular-flexslider.js',
-				'public/lib/bootstrap-validator/dist/validator.min.js'
+				'public/lib/bootstrap-validator/dist/validator.min.js',
+				'public/lib/fancybox/source/jquery.fancybox.pack.js'
 			]
 		},
 		css: [

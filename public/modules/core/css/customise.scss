@@ -55,6 +55,9 @@ header {
 }
 
 .products {
+    a {
+        text-decoration: none;
+    }
     .product {
         background-color: #736761;
         height: 450px;
@@ -148,6 +151,18 @@ footer {
 section.container-fluid {
     margin: 0;
     padding: 0;
+}
+
+.fancybox {
+    margin: 5px;
+    display: block;
+    img {
+        display: block;
+        width: 80px;
+        float: left;
+        margin: 3px;
+    }
+
 }
 
 //for animation
