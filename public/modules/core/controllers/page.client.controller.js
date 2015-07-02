@@ -1,8 +1,8 @@
 'use strict';
 
 
-angular.module('core').controller('PageController', ['$scope', 'Authentication', 'Files',
-	function($scope, Authentication, Files) {
+angular.module('core').controller('PageController', ['$scope', '$http', 'Authentication', 'Files',
+	function($scope, $http, Authentication, Files) {
 		// This provides Authentication context.
 		$scope.authentication = Authentication;
 
@@ -33,7 +33,21 @@ angular.module('core').controller('PageController', ['$scope', 'Authentication',
             {
                 'title': 'BENCH TOPS',
                 'link': 'bench',
-                'images': ['/modules/core/img/bench/1.jpg'],
+                'images': [
+                    '/modules/core/img/bench/1.jpg',
+                    '/modules/core/img/bench/2.jpg',
+                    '/modules/core/img/bench/3.jpg',
+                    '/modules/core/img/bench/4.jpg',
+                    '/modules/core/img/bench/5.jpg',
+                    '/modules/core/img/bench/6.jpg',
+                    '/modules/core/img/bench/7.jpg',
+                    '/modules/core/img/bench/8.jpg',
+                    '/modules/core/img/bench/9.jpg',
+                    '/modules/core/img/bench/10.jpg',
+                    '/modules/core/img/bench/11.jpg',
+                    '/modules/core/img/bench/12.jpg',
+                    '/modules/core/img/bench/13.jpg'
+                ],
                 'summary': 'Granite Color &Quartz surface.',
                 'description': [
                     'We are also specialising in importing and manufacturing natural stone products and engineered stone.we are fabricator of leading brands like Caesar Stone,Sile Stone,Trend Stone and Uni quartz.',
@@ -48,7 +62,13 @@ angular.module('core').controller('PageController', ['$scope', 'Authentication',
         ];
 
         $scope.send = function() {
-            alert('Successful');
+
+            $http.post('/page/send', $scope.contact).success(function(response){
+                alert(response.message);
+            }).error(function(response) {
+                $scope.error = response.message;
+            });
+
         };
 
 	}
@@ -56,7 +76,7 @@ angular.module('core').controller('PageController', ['$scope', 'Authentication',
 
 (function($){
     $(window).load(function(){
-        $(".fancybox").fancybox();
+        $('.fancybox').fancybox();
     });
 })(angular.element);
 

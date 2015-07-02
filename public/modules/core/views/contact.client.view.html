@@ -23,24 +23,24 @@
     </div>
     <div class="col-sm-12">
         <h3 class="page-header">Contact Us</h3>
-        <form class="" data-toggle="validator" role="form">
+        <form class="" data-toggle="validator" role="form" data-ng-submit="send()">
             <div class="form-group required">
                 <label for="name" class="control-label text-capitalize">name</label>
-                <input required type="text" class="form-control" id="name" name="name" placeholder="Name">
+                <input required type="text" class="form-control" id="name" name="name" data-ng-model="contact.name" placeholder="Name">
             </div>
             <div class="form-group required">
                 <label for="email" class="control-label text-capitalize">email</label>
-                <input required type="email" class="form-control" id="email" name="email" placeholder="Email">
+                <input required type="email" class="form-control" id="email" name="email" data-ng-model="contact.email" placeholder="Email">
             </div>
             <div class="form-group">
                 <label for="mobile" class="control-label text-capitalize">mobile</label>
-                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile">
+                <input type="text" class="form-control" id="mobile" name="mobile" data-ng-model="contact.mobile" placeholder="Mobile">
             </div>
             <div class="form-group required">
                 <label for="message" class="control-label text-capitalize">message</label>
-                <textarea required type="text" class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
+                <textarea required type="text" class="form-control" id="message" name="message" data-ng-model="contact.message" rows="5" placeholder="Message"></textarea>
             </div>
-            <button type="submit" class="btn btn-lg btn-default send-button" data-ng-click="send()">Send</button>
+            <button type="submit" class="btn btn-lg btn-default send-button" >Send</button>
         </form>
     </div>
 
