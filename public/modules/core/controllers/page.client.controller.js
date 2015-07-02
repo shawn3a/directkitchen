@@ -28,7 +28,7 @@ angular.module('core').controller('PageController', ['$scope', 'Authentication',
 
         $scope.send = function() {
             alert('Successful');
-        }
+        };
 
 	}
 ]);

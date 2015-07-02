@@ -10,12 +10,10 @@ body {
     background: url("/modules/core/img/brand/bg1.png") repeat;
 }
 
-.logo {
-    display: block;
-}
 
 header {
     .navbar-header {
+        width: 20%;
         .navbar-toggle {
             background-color: #555555;
             .icon-bar {
@@ -24,13 +22,15 @@ header {
         }
         a {
             display: block;
+            width: 100%;
             .logo {
-                height: 70px;
+                width: 100%;
             }
         }
     }
 
     nav {
+        padding: 0 !important;
         ul.nav {
             li {
                 a {
@@ -144,5 +144,108 @@ footer {
     padding-bottom: 20px;
 
 }
+
+section.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+//for animation
+
+$duration: 1s;
+$transform: none;
+
+.view-container {
+	position: relative;
+}
+
+.view-frame.ng-enter, .view-frame.ng-leave {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.view-frame.ng-enter {
+    -webkit-animation: $duration fade-in;
+    -moz-animation: $duration fade-in;
+    -o-animation: $duration fade-in;
+    animation: $duration fade-in;
+    z-index: 100;
+}
+
+.view-frame.ng-leave {
+    -webkit-animation: $duration fade-out;
+    -moz-animation: $duration fade-out;
+    -o-animation: $duration fade-out;
+    animation: $duration fade-out;
+    z-index:99;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        -webkit-transform: $transform;
+        -moz-transform: $transform;
+        -ms-transform: $transform;
+        -o-transform: $transform;
+        transform: $transform;
+
+        -webkit-transform-origin: 30% top 0;
+        -moz-transform-origin: 30% top 0;
+        -ms-transform-origin: 30% top 0;
+        -o-transform-origin: 30% top 0;
+        transform-origin: 30% top 0;
+
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@-moz-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
 
 
