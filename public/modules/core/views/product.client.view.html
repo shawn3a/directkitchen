@@ -1,0 +1,13 @@
+<section data-ng-controller="PageController" class="col-sm-12" data-ng-init="getProduct()">
+    <h3 class="page-header col-sm-12" data-ng-bind="product.title"></h3>
+    <div>
+        <article class="col-sm-12 top-buffer">
+            <p data-ng-repeat="p in product.description" data-ng-bind="p"></p>
+        </article>
+        <figure class="col-sm-10 col-sm-offset-1 text-center">
+            <a data-ng-repeat="image in product.images" data-ng-href="{{image}}" class="fancybox" rel="group">
+                <img data-ng-src="{{image}}" class="">
+            </a>
+        </figure>
+    </div>
+</section>

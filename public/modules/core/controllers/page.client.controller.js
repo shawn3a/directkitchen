@@ -1,8 +1,8 @@
 'use strict';
 
 
-angular.module('core').controller('PageController', ['$scope', '$http', 'Authentication', 'Files',
-	function($scope, $http, Authentication, Files) {
+angular.module('core').controller('PageController', ['$scope', '$http', '$location', '$stateParams', 'Authentication', 'Files',
+	function($scope, $http, $location, $stateParams, Authentication, Files) {
 		// This provides Authentication context.
 		$scope.authentication = Authentication;
 
@@ -56,19 +56,36 @@ angular.module('core').controller('PageController', ['$scope', '$http', 'Authent
             },
             {
                 'title': 'BATHROOM HARDWARE',
+                'link': 'bathroom-hardware',
                 'images': ['/modules/core/img/sinks/1.png'],
                 'summary': 'Sinks Taps &Vanity basin.',
             }
         ];
 
-        $scope.send = function() {
+        $scope.template = {
+            products: 'modules/core/views/include/products.client.view.html'
+        };
 
+        $scope.send = function() {
             $http.post('/page/send', $scope.contact).success(function(response){
                 alert(response.message);
             }).error(function(response) {
                 $scope.error = response.message;
             });
 
+        };
+
+        $scope.getProduct = function() {
+            var name = $stateParams.name;
+            var filtered = $scope.products.filter(function(item){
+                return item.link === name;
+            });
+
+            if (filtered.length > 0) {
+                $scope.product = filtered[0];
+            } else {
+                $location.path('/');
+            }
         };
 
 	}

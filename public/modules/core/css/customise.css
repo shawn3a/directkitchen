@@ -8,6 +8,9 @@ body {
   font-family: News Cycle, sans-serif;
   background: url("/modules/core/img/brand/bg1.png") repeat; }
 
+.logos {
+  padding-top: 30px; }
+
 header .navbar-header {
   width: 20%; }
   header .navbar-header .navbar-toggle {
@@ -107,7 +110,7 @@ section.container-fluid {
   display: block; }
   .fancybox img {
     display: block;
-    width: 80px;
+    width: 200px;
     float: left;
     margin: 3px; }
 

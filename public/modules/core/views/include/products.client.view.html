@@ -1,0 +1,13 @@
+<div class="products">
+    <a data-ng-href="/#!/product/{{product.link}}" class="container col-sm-4 text-center top-buffer" data-ng-repeat="product in products">
+        <div class="product">
+            <h3 class="title" data-ng-bind="product.title"></h3>
+            <div class="images">
+                <img data-ng-src="{{product.images[0]}}" >
+            </div>
+            <div class="description">
+                <p data-ng-bind="product.summary"></p>
+            </div>
+        </div>
+    </a>
+</div>

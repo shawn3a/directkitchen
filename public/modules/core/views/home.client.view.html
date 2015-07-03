@@ -6,9 +6,12 @@
             </li>
         </flex-slider>
     </div>
-
+        <!--
+    <div data-ng-include="template.products.url">
+    </div>
+        -->
     <div class="products">
-        <a data-ng-href="/#!/{{product.link}}" class="container col-sm-4 text-center top-buffer" data-ng-repeat="product in products">
+        <a data-ng-href="/#!/product/{{product.link}}" class="container col-sm-4 text-center top-buffer" data-ng-repeat="product in products">
             <div class="product">
                 <h3 class="title" data-ng-bind="product.title"></h3>
                 <div class="images">
@@ -19,5 +22,9 @@
                 </div>
             </div>
         </a>
+    </div>
+    <div class="logos col-sm-12 text-center">
+        <h5>Partnering With</h5>
+        <img class="col-sm-6 col-sm-offset-3 col-xs-12" src="/modules/core/img/brand/logos.jpg" alt="partners" title="partners">
     </div>
 </section>

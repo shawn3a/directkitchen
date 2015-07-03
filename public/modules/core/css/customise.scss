@@ -10,6 +10,9 @@ body {
     background: url("/modules/core/img/brand/bg1.png") repeat;
 }
 
+.logos {
+    padding-top: 30px;
+}
 
 header {
     .navbar-header {
@@ -158,7 +161,7 @@ section.container-fluid {
     display: block;
     img {
         display: block;
-        width: 80px;
+        width: 200px;
         float: left;
         margin: 3px;
     }
