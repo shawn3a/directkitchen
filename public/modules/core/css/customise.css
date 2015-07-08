@@ -11,32 +11,27 @@ body {
 .logos {
   padding-top: 30px; }
 
-header .navbar-header {
-  width: 20%; }
+header {
+  margin-bottom: 0 !important; }
   header .navbar-header .navbar-toggle {
     background-color: #555555; }
     header .navbar-header .navbar-toggle .icon-bar {
       background-color: #ffffff; }
-  header .navbar-header a {
-    display: block;
-    width: 100%; }
-    header .navbar-header a .logo {
-      width: 100%; }
-header nav {
-  padding: 0 !important; }
-  header nav ul.nav li a {
-    display: block;
-    height: 50px;
-    padding: 10px 30px;
-    box-sizing: content-box;
-    line-height: 50px;
-    font-size: 18px;
-    color: #555555;
-    text-transform: uppercase;
-    transition: 1s; }
-    header nav ul.nav li a:hover {
-      background: #6B625E;
-      color: #ffffff; }
+  header nav {
+    padding: 0 !important; }
+    header nav ul.nav li a {
+      display: block;
+      height: 90px;
+      padding: 10px 30px;
+      box-sizing: content-box;
+      line-height: 90px;
+      font-size: 18px;
+      color: #555555;
+      text-transform: uppercase;
+      transition: 1s; }
+      header nav ul.nav li a:hover {
+        background: #6B625E;
+        color: #ffffff; }
 
 .products a {
   text-decoration: none; }
@@ -113,6 +108,10 @@ section.container-fluid {
     width: 200px;
     float: left;
     margin: 3px; }
+
+.container .navbar-header, .container .navbar-collapse {
+  margin-left: -15px !important;
+  margin-right: -15px !important; }
 
 .view-container {
   position: relative; }
