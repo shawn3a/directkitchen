@@ -212,63 +212,62 @@ $transform: none;
 @keyframes fade-in {
     from {
         opacity: 0;
-        -webkit-transform: $transform;
-        -moz-transform: $transform;
-        -ms-transform: $transform;
-        -o-transform: $transform;
-        transform: $transform;
-
-        -webkit-transform-origin: 30% top 0;
-        -moz-transform-origin: 30% top 0;
-        -ms-transform-origin: 30% top 0;
-        -o-transform-origin: 30% top 0;
-        transform-origin: 30% top 0;
-
+        right: 100%;
     }
     to {
         opacity: 1;
-        transform: none;
+        right: 0;
     }
 }
 @-moz-keyframes fade-in {
     from {
         opacity: 0;
+        right: 100%;
     }
     to {
         opacity: 1;
+        right: 0;
     }
 }
 @-webkit-keyframes fade-in {
     from {
         opacity: 0;
+        right: 100%;
     }
     to {
         opacity: 1;
+        right: 0;
     }
 }
 
 @keyframes fade-out {
     from {
         opacity: 1;
+        left: 0;
     }
     to {
         opacity: 0;
+        left: 100%;
     }
 }
 @-moz-keyframes fade-out {
     from {
         opacity: 1;
+        left: 0;
     }
     to {
         opacity: 0;
+        left: 100%;
     }
 }
 @-webkit-keyframes fade-out {
     from {
         opacity: 1;
+        left: 0;
     }
     to {
         opacity: 0;
+        left: 100%;
     }
 }
 
