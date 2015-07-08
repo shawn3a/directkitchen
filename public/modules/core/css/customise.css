@@ -116,9 +116,10 @@ section.container-fluid {
 
 .view-container {
   position: relative; }
+  .view-container .view-frame {
+    background-color: white; }
 
-.view-frame.ng-enter, .view-frame.ng-leave {
-  background: white;
+.view-frame.ng-leave {
   position: absolute;
   top: 0;
   left: 0;

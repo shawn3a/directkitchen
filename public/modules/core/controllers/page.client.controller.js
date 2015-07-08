@@ -81,6 +81,10 @@ angular.module('core').controller('PageController', ['$scope', '$http', '$locati
                 return item.link === name;
             });
 
+            if (!name) {
+                $location.path('/');
+            }
+
             if (filtered.length > 0) {
                 $scope.product = filtered[0];
             } else {
@@ -89,7 +93,17 @@ angular.module('core').controller('PageController', ['$scope', '$http', '$locati
         };
 
 	}
-]);
+])
+.directive('filterLink', function(){
+    return {
+        restrict: 'A',
+        link: function(element, attributes, scope, controller) {
+            element.on('click', function(e){
+                e.preventDefault();
+            });
+        }
+    }
+});
 
 (function($){
     $(window).load(function(){
